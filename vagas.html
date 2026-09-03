@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagas — NUDCARI</title>
+<meta name="description" content="Estágios, editais, bolsas e vagas de emprego selecionadas para estudantes de Relações Internacionais pelo NUDCARI.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand">
+    <img src="assets/logo-icon.png" alt="NUDCARI" class="nav__logo">
+    <span class="nav__word">NUDCARI</span>
+  </a>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="index.html#quem-somos">Quem somos</a>
+    <a href="index.html#pilares">O que fazemos</a>
+    <a href="equipe.html">Equipe</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="vagas.html" class="active">Vagas</a>
+  </nav>
+
+  <a href="https://instagram.com/nudcari_uema" target="_blank" rel="noopener" class="nav__cta">Seguir</a>
+
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__deco" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none">
+        <g stroke="currentColor" stroke-width="0.8">
+          <path d="M100 20 L150 55 L130 110 L70 110 L50 55 Z"/>
+          <path d="M100 20 L100 60 M150 55 L100 60 M130 110 L100 60 M70 110 L100 60 M50 55 L100 60"/>
+          <path d="M150 55 L180 40 M130 110 L175 120 M70 110 L30 125"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="100" cy="20" r="3"/><circle cx="150" cy="55" r="3"/><circle cx="130" cy="110" r="3"/>
+          <circle cx="70" cy="110" r="3"/><circle cx="50" cy="55" r="3"/><circle cx="100" cy="60" r="2.4"/>
+          <circle cx="180" cy="40" r="2"/><circle cx="175" cy="120" r="2"/><circle cx="30" cy="125" r="2"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light" data-reveal>Vagas</p>
+      <h1 data-reveal>Oportunidades para internacionalistas.</h1>
+      <p class="lede" data-reveal>
+        Estágios, editais, bolsas e vagas de emprego selecionadas e organizadas
+        pela equipe de Carreira &amp; Oportunidades do NUDCARI.
+      </p>
+    </div>
+  </section>
+
+  <!-- LISTAGEM -->
+  <section class="section section--white">
+    <div class="wrap">
+
+      <div class="filters" data-reveal>
+        <button class="filter-chip active" data-filter="todas">Todas</button>
+        <button class="filter-chip" data-filter="estagio">Estágio</button>
+        <button class="filter-chip" data-filter="emprego">Emprego</button>
+        <button class="filter-chip" data-filter="edital">Edital / Bolsa</button>
+        <button class="filter-chip" data-filter="voluntariado">Voluntariado</button>
+      </div>
+
+      <!--
+        ===== COMO ADICIONAR UMA VAGA REAL =====
+        Duplique um bloco <article class="job-card" data-type="...">...</article> inteiro,
+        edite os campos e apague a tag "EXEMPLO" (job-card__tag job-card__demo).
+        data-type aceita: estagio | emprego | edital | voluntariado (usado pelos filtros acima).
+      -->
+
+      <div class="jobs" id="jobsList">
+
+        <article class="job-card" data-type="estagio" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Estágio</span>
+              <span class="job-card__tag">Presencial</span>
+              <span class="job-card__tag job-card__demo">Exemplo</span>
+            </div>
+            <h3>Estágio em Assessoria de Relações Internacionais</h3>
+            <p class="job-card__org">Prefeitura de São Luís · Secretaria de Relações Institucionais</p>
+            <p class="desc">Apoio na articulação de parcerias internacionais, tradução de documentos e organização de agendas com delegações estrangeiras.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>30/09/2026</strong></span>
+            <a href="#" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="edital" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Edital / Bolsa</span>
+              <span class="job-card__tag">UEMA</span>
+              <span class="job-card__tag job-card__demo">Exemplo</span>
+            </div>
+            <h3>Edital de Iniciação Científica — PIBIC 2026</h3>
+            <p class="job-card__org">UEMA · Pró-Reitoria de Pesquisa e Pós-Graduação</p>
+            <p class="desc">Bolsas para projetos de pesquisa vinculados a docentes orientadores, com foco em temas de política internacional e economia global.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>15/10/2026</strong></span>
+            <a href="#" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="emprego" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
+              <span class="job-card__tag">Híbrido</span>
+              <span class="job-card__tag job-card__demo">Exemplo</span>
+            </div>
+            <h3>Analista Trainee de Comércio Exterior</h3>
+            <p class="job-card__org">Empresa de logística internacional</p>
+            <p class="desc">Programa de trainee com rotação entre as áreas de exportação, importação e relacionamento com órgãos aduaneiros.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>05/10/2026</strong></span>
+            <a href="#" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="jobs-note">
+        As vagas marcadas como "Exemplo" ilustram o formato do card e serão
+        substituídas pelas oportunidades reais enviadas pela equipe do NUDCARI.
+      </p>
+
+      <div class="mini-cta" data-reveal>
+        <div>
+          <h3>Tem uma vaga pra divulgar?</h3>
+          <p>Envie os detalhes pelo Instagram e ajudamos a alcançar os internacionalistas certos.</p>
+        </div>
+        <a href="https://instagram.com/nudcari_uema" target="_blank" rel="noopener" class="btn btn--light">Falar com o NUDCARI</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo-icon.png" alt="NUDCARI">
+      <div>
+        <strong>NUDCARI</strong>
+        <span>Núcleo de Desenvolvimento de Carreira em Relações Internacionais — UEMA/CCSA</span>
+      </div>
+    </div>
+    <nav class="footer__links">
+      <a href="index.html#quem-somos">Quem somos</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="vagas.html">Vagas</a>
+      <a href="https://instagram.com/nudcari_uema" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 NUDCARI · Projeto de extensão RI/UEMA · CCSA</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
