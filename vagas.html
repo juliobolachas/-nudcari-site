@@ -76,29 +76,23 @@
         <button class="filter-chip" data-filter="voluntariado">Voluntariado</button>
       </div>
 
-      <!--
-        ===== COMO ADICIONAR UMA VAGA REAL =====
-        Duplique um bloco <article class="job-card" data-type="...">...</article> inteiro,
-        edite os campos e apague a tag "EXEMPLO" (job-card__tag job-card__demo).
-        data-type aceita: estagio | emprego | edital | voluntariado (usado pelos filtros acima).
-      -->
-
       <div class="jobs" id="jobsList">
 
-        <article class="job-card" data-type="estagio" data-reveal>
+        <!-- BOLSAS E EDITAIS -->
+        <article class="job-card" data-type="edital" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
-              <span class="job-card__tag">Estágio</span>
-              <span class="job-card__tag">Presencial</span>
-              <span class="job-card__tag job-card__demo">Exemplo</span>
+              <span class="job-card__tag">Edital / Bolsa</span>
+              <span class="job-card__tag">Internacional</span>
+              <span class="job-card__tag">Bolsa Integral</span>
             </div>
-            <h3>Estágio em Assessoria de Relações Internacionais</h3>
-            <p class="job-card__org">Prefeitura de São Luís · Secretaria de Relações Institucionais</p>
-            <p class="desc">Apoio na articulação de parcerias internacionais, tradução de documentos e organização de agendas com delegações estrangeiras.</p>
+            <h3>Bolsa Schwarzman Scholars</h3>
+            <p class="job-card__org">Schwarzman Scholars · Tsinghua University (Pequim)</p>
+            <p class="desc">Programa de mestrado 100% financiado com foco em liderança global. Exige graduação concluída até 01/08/2027, idade entre 18 e 28 anos, proficiência em inglês e excelência acadêmica. Processo seletivo inclui CV, essays, histórico, 3 recomendações e vídeo.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>30/09/2026</strong></span>
-            <a href="#" class="btn-small">Ver vaga →</a>
+            <span class="job-card__deadline">Inscrições até<strong>Consulte o portal</strong></span>
+            <a href="https://connect.schwarzmanscholars.org/apply/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
@@ -106,16 +100,51 @@
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Edital / Bolsa</span>
-              <span class="job-card__tag">UEMA</span>
-              <span class="job-card__tag job-card__demo">Exemplo</span>
+              <span class="job-card__tag">Reino Unido</span>
+              <span class="job-card__tag">Bolsa Integral</span>
             </div>
-            <h3>Edital de Iniciação Científica — PIBIC 2026</h3>
-            <p class="job-card__org">UEMA · Pró-Reitoria de Pesquisa e Pós-Graduação</p>
-            <p class="desc">Bolsas para projetos de pesquisa vinculados a docentes orientadores, com foco em temas de política internacional e economia global.</p>
+            <h3>Weidenfeld-Hoffmann Scholarships and Leadership Programme</h3>
+            <p class="job-card__org">Universidade de Oxford</p>
+            <p class="desc">Bolsa integral (100% das taxas + auxílio de custo) para mestrados elegíveis na Universidade de Oxford. Voltado para candidatos de países em desenvolvimento (incluindo o Brasil) que demonstrem liderança e compromisso de retorno ao país de origem.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>15/10/2026</strong></span>
-            <a href="#" class="btn-small">Ver vaga →</a>
+            <span class="job-card__deadline">Inscrições até<strong>Dez/2026 a Jan/2027</strong></span>
+            <a href="https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/weidenfeld-hoffmann-scholarships-and-leadership-programme" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="edital" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Edital / Bolsa</span>
+              <span class="job-card__tag">União Europeia</span>
+              <span class="job-card__tag">Bolsa Integral</span>
+            </div>
+            <h3>Erasmus Mundus Joint Master (EMJM)</h3>
+            <p class="job-card__org">Comissão Europeia / Consórcios Universitários</p>
+            <p class="desc">Programas de mestrado de excelência na Europa com bolsa integral. Destaque para cursos em Ação Humanitária (NOHA), Estudos Estratégicos (IMSISS), Direito Internacional, Migrações e Políticas Públicas (Mundus MAPP). Requer graduação completa e proficiência em inglês.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>Varia por programa</strong></span>
+            <a href="https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <!-- TRAINEE / EMPREGO -->
+        <article class="job-card" data-type="emprego" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
+              <span class="job-card__tag">Trainee</span>
+              <span class="job-card__tag">Nacional</span>
+            </div>
+            <h3>Programa Trainee Nestlé 2026</h3>
+            <p class="job-card__org">Nestlé Brasil</p>
+            <p class="desc">Aberto a graduados em qualquer curso (bacharelado, licenciatura ou tecnólogo) entre Dez/2022 e Dez/2026. Sem restrição de idade ou idioma obrigatório para a maioria das vagas. Exige disponibilidade para viagens constantes e mudanças.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>09/09/2026</strong></span>
+            <a href="https://amostras.euqueronestle.com.br/traineenestle/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
@@ -123,25 +152,39 @@
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Emprego</span>
-              <span class="job-card__tag">Híbrido</span>
-              <span class="job-card__tag job-card__demo">Exemplo</span>
+              <span class="job-card__tag">Presencial</span>
+              <span class="job-card__tag">São Luís - MA</span>
             </div>
-            <h3>Analista Trainee de Comércio Exterior</h3>
-            <p class="job-card__org">Empresa de logística internacional</p>
-            <p class="desc">Programa de trainee com rotação entre as áreas de exportação, importação e relacionamento com órgãos aduaneiros.</p>
+            <h3>Assistente de Agenciamento Marítimo Operacional</h3>
+            <p class="job-card__org">Rochamar Agência Marítima · São Luís/MA</p>
+
+            <p class="desc">Atuação operacional no setor portuário. Requer inglês intermediário a avançado (conversação) e CNH B. Diferencial para estudantes ou graduados em Comércio Exterior, Logística, RI ou Administração, além de conhecimento em legislação aduaneira e Siscomex.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>05/10/2026</strong></span>
-            <a href="#" class="btn-small">Ver vaga →</a>
+            <span class="job-card__deadline">Inscrições até<strong>Ativa</strong></span>
+            <a href="https://rochamar.pandape.infojobs.com.br/Detail/3516064" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <!-- ESTÁGIO -->
+        <article class="job-card" data-type="estagio" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Estágio</span>
+              <span class="job-card__tag">Presencial</span>
+              <span class="job-card__tag">Maranhão e outros</span>
+            </div>
+            <h3>Programa de Estágio Axia Energia 2027</h3>
+            <p class="job-card__org">AXIA Energia</p>
+            <p class="desc">Estágio 100% presencial na maior empresa de energia renovável do Hemisfério Sul. Destinado a estudantes de graduação com previsão de formatura entre dezembro de 2028 e agosto de 2029. Vagas com atuação no Maranhão e em diversos outros estados.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>30/09/2026</strong></span>
+            <a href="https://across.kolab.ee/k-acr-8d5m/3074-programa-de-estagio-axia-2027" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
       </div>
-
-      <p class="jobs-note">
-        As vagas marcadas como "Exemplo" ilustram o formato do card e serão
-        substituídas pelas oportunidades reais enviadas pela equipe do NUDCARI.
-      </p>
 
       <div class="mini-cta" data-reveal>
         <div>
