@@ -54,6 +54,63 @@ if (reduceMotion) {
   });
 })();
 
+/* ===== carousel ===== */
+(function carousels() {
+  document.querySelectorAll('[data-carousel]').forEach(root => {
+    const track = root.querySelector('[data-carousel-track]');
+    const prev = root.querySelector('[data-carousel-prev]');
+    const next = root.querySelector('[data-carousel-next]');
+    const dotsBox = root.querySelector('[data-carousel-dots]');
+    const slides = Array.from(track.children);
+    if (!slides.length) return;
+
+    // a single image doesn't need controls
+    if (slides.length < 2) {
+      [prev, next, dotsBox].forEach(el => el && (el.style.display = 'none'));
+      return;
+    }
+
+    // build dots
+    const dots = slides.map((_, i) => {
+      const b = document.createElement('button');
+      b.className = 'carousel__dot';
+      b.type = 'button';
+      b.setAttribute('aria-label', `Ir para imagem ${i + 1}`);
+      b.addEventListener('click', () => {
+        track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      });
+      dotsBox && dotsBox.appendChild(b);
+      return b;
+    });
+
+    function step() {
+      const s = slides[0].getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      return s + gap;
+    }
+
+    function sync() {
+      const max = track.scrollWidth - track.clientWidth;
+      if (prev) prev.disabled = track.scrollLeft <= 2;
+      if (next) next.disabled = track.scrollLeft >= max - 2;
+
+      // nearest slide wins the active dot
+      let active = 0, best = Infinity;
+      slides.forEach((sl, i) => {
+        const d = Math.abs(sl.offsetLeft - track.offsetLeft - track.scrollLeft);
+        if (d < best) { best = d; active = i; }
+      });
+      dots.forEach((d, i) => d.classList.toggle('active', i === active));
+    }
+
+    prev && prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    next && next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+    track.addEventListener('scroll', () => window.requestAnimationFrame(sync), { passive: true });
+    window.addEventListener('resize', sync, { passive: true });
+    sync();
+  });
+})();
+
 /* ===== hero network canvas — echoes the NUDCARI mark ===== */
 (function networkCanvas() {
   const canvas = document.getElementById('network');
