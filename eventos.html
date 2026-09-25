@@ -67,14 +67,15 @@
   <!-- PRÓXIMOS EVENTOS -->
   <section class="section section--white">
     <div class="wrap">
-      <p class="eyebrow" data-reveal>Agenda</p>
-      <h2 class="h2" data-reveal>Próximos eventos.</h2>
+      <p class="eyebrow" data-reveal>Realizado</p>
+      <h2 class="h2" data-reveal>Como foi o nosso primeiro encontro.</h2>
 
       <!--
         ===== COMO ADICIONAR UM NOVO EVENTO =====
         Duplique o bloco <article class="event">...</article> inteiro e edite os campos.
-        Quando o evento passar, troque a tag "Próximo evento" por "Realizado" e mova o
-        bloco para baixo dos eventos futuros.
+        Para um evento FUTURO, use a tag "event__tag--live" com o texto "Próximo evento"
+        e troque o eyebrow/h2 acima para "Agenda" / "Próximos eventos.". Quando o evento
+        passar, troque a tag para "event__tag--done" com o texto "Realizado".
       -->
       <article class="event" id="nudcari-conecta" data-reveal>
         <div class="event__date" aria-hidden="true">
@@ -85,7 +86,7 @@
 
         <div class="event__body">
           <div class="event__tags">
-            <span class="event__tag event__tag--live">Próximo evento</span>
+            <span class="event__tag event__tag--done">Realizado</span>
             <span class="event__tag">Aberto ao público</span>
             <span class="event__tag">Presencial</span>
           </div>
@@ -94,10 +95,21 @@
           <p class="event__subtitle">Carreira em RI, trajetórias, mercado de trabalho e possibilidades</p>
 
           <p class="event__desc">
-            O encontro inaugural do núcleo aproxima estudantes de diferentes possibilidades de
-            atuação no universo das Relações Internacionais. Três profissionais com trajetórias
-            distintas conversam sobre carreira, mercado de trabalho e os caminhos possíveis para
-            quem escolhe essa formação.
+            No dia 23 de setembro, o NUDCARI realizou seu primeiro evento: uma roda de
+            conversa com três convidados — Letícia do Carmo, Igor Fóscolo e Vinícius Almeida —
+            sobre trajetórias profissionais no universo das Relações Internacionais.
+          </p>
+          <p class="event__desc">
+            Cada um compartilhou como construiu sua carreira e encontrou seu espaço no
+            mercado de trabalho, trazendo relatos que aproximaram os estudantes de
+            experiências reais da profissão. Mais do que uma palestra, foi uma oportunidade
+            de tirar dúvidas diretamente com internacionalistas formados que hoje atuam em
+            suas áreas de formação — e de enxergar, na prática, os diferentes caminhos que
+            a graduação em RI pode abrir.
+          </p>
+          <p class="event__desc">
+            Foi um encontro simples, mas marcante: o primeiro de muitos passos do NUDCARI
+            para aproximar a academia do mercado de trabalho.
           </p>
 
           <ul class="event__info">
@@ -124,6 +136,50 @@
               <span>Superintendente da SEDEPE-MA</span>
               <p>Internacionalista e mestre em Relações Internacionais pela PUC Minas. Atua na Secretaria de Estado do Desenvolvimento Econômico e Programas Estratégicos do Maranhão, com foco na internacionalização do setor público e na inserção do Estado em agendas internacionais.</p>
             </div>
+          </div>
+
+          <p class="event__speakers-label">Acervo de fotos</p>
+          <!--
+            ===== COMO ADICIONAR MAIS FOTOS =====
+            Salve a foto (já comprimida, ~1400px no lado maior) em assets/galeria/,
+            seguindo a numeração (evento-conecta-08.jpg, -09.jpg...), e adicione dentro
+            de [data-carousel-track]:
+            <figure class="carousel__slide"><img src="assets/galeria/evento-conecta-08.jpg" alt="Descrição da foto" loading="lazy"></figure>
+            O carrossel (setas, bolinhas) já funciona sozinho, não importa quantas fotos.
+          -->
+          <div class="carousel" data-carousel>
+            <div class="carousel__track" data-carousel-track>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-01.jpg" alt="Plateia e organizadores do NUDCARI Conecta reunidos para foto em grupo no auditório do Centro Caixeiral." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-02.jpg" alt="Abertura do NUDCARI Conecta, com a apresentação do porquê o núcleo nasceu." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-03.jpg" alt="Roda de conversa com os três convidados no palco do auditório." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-04.jpg" alt="Igor Fóscolo falando ao microfone durante a roda de conversa." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-05.jpg" alt="Letícia do Carmo falando ao microfone durante a roda de conversa." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-06.jpg" alt="Estudante da plateia fazendo uma pergunta aos convidados." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/galeria/evento-conecta-07.jpg" alt="Foto em grupo dos participantes ao final do evento." loading="lazy">
+              </figure>
+            </div>
+
+            <button class="carousel__nav carousel__nav--prev" data-carousel-prev aria-label="Foto anterior">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel__nav carousel__nav--next" data-carousel-next aria-label="Próxima foto">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="carousel__dots" data-carousel-dots></div>
           </div>
 
           <p class="event__speakers-label">Divulgação</p>

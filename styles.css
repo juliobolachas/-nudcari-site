@@ -408,6 +408,7 @@ img{ max-width:100%; display:block; }
   padding:4px 11px; border-radius:100px; background:var(--pale); color:var(--blue-deep);
 }
 .event__tag--live{ background:var(--navy); color:var(--white); }
+.event__tag--done{ background:var(--pale-2); color:var(--ink-soft); }
 .event__body h3{ font-family:var(--serif); font-weight:600; font-size:27px; color:var(--navy); margin:0 0 6px; }
 .event__subtitle{ font-size:16px; color:var(--blue-deep); margin:0 0 18px; line-height:1.5; }
 .event__desc{ font-size:15px; line-height:1.75; color:var(--ink-soft); margin:0 0 26px; max-width:66ch; }
