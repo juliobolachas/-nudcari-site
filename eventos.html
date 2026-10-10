@@ -65,7 +65,88 @@
   </section>
 
   <!-- PRÓXIMOS EVENTOS -->
-  <section class="section section--white">
+  <section class="section section--white" id="agenda">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Agenda</p>
+      <h2 class="h2" data-reveal>Próximos eventos.</h2>
+
+      <article class="event" id="webinar-carreira-ri" data-reveal>
+        <div class="event__date" aria-hidden="true">
+          <span class="event__day">30</span>
+          <span class="event__month">Out</span>
+          <span class="event__year">2026</span>
+        </div>
+
+        <div class="event__body">
+          <div class="event__tags">
+            <span class="event__tag event__tag--live">Próximo evento</span>
+            <span class="event__tag">Webinar</span>
+            <span class="event__tag">Online</span>
+          </div>
+
+          <h3>Carreira em Relações Internacionais</h3>
+          <p class="event__subtitle">Por onde começar e como se planejar?</p>
+
+          <p class="event__desc">
+            O NUDCARI realiza seu próximo encontro: um webinar com Nilo Scandaroli, fundador do
+            Conversa com Internacionalista, para quem quer entender os primeiros passos na área
+            e organizar o planejamento da própria carreira em Relações Internacionais.
+          </p>
+          <p class="event__desc">
+            A conversa é online, via Google Meet — participe de onde estiver.
+          </p>
+
+          <ul class="event__info">
+            <li><strong>Data</strong> 30 de outubro de 2026 (sexta-feira)</li>
+            <li><strong>Horário</strong> 15h (horário de Brasília)</li>
+            <li><strong>Local</strong> Online, via Google Meet</li>
+            <li><strong>Inscrições até</strong> 25 de outubro</li>
+          </ul>
+
+          <div class="event__cta">
+            <a href="https://www.even3.com.br/carreira-em-relacoes-internacionais-796819/" target="_blank" rel="noopener noreferrer" class="btn-register">
+              Inscreva-se agora
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <span class="event__cta-note">Inscrições pela plataforma Even3</span>
+          </div>
+
+          <p class="event__speakers-label">Palestrante</p>
+          <div class="speakers speakers--single">
+            <div class="speaker">
+              <h4>Nilo Scandaroli</h4>
+              <span>Fundador do Conversa com Internacionalista</span>
+              <p>Internacionalista e consultor em estratégia, internacionalização, competitividade e posicionamento profissional. Atua na interseção entre Relações Internacionais, negócios e carreira, ajudando profissionais e organizações a transformar repertório em direção, posicionamento e valor de mercado.</p>
+            </div>
+          </div>
+
+          <p class="event__speakers-label">Divulgação</p>
+          <div class="carousel" data-carousel>
+            <div class="carousel__track" data-carousel-track>
+              <figure class="carousel__slide">
+                <img src="assets/webinar-nilo-1.jpg" alt="Card de divulgação do webinar Carreira em Relações Internacionais: por onde começar e como se planejar, com Nilo Scandaroli. 30 de outubro, 15h, online via Google Meet." loading="lazy">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/webinar-nilo-2.jpg" alt="Card de apresentação do palestrante Nilo Scandaroli, internacionalista e consultor. Inscrições até 25 de outubro." loading="lazy">
+              </figure>
+            </div>
+
+            <button class="carousel__nav carousel__nav--prev" data-carousel-prev aria-label="Imagem anterior">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel__nav carousel__nav--next" data-carousel-next aria-label="Próxima imagem">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="carousel__dots" data-carousel-dots></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EVENTOS REALIZADOS -->
+  <section class="section section--pale" id="realizados">
     <div class="wrap">
       <p class="eyebrow" data-reveal>Realizado</p>
       <h2 class="h2" data-reveal>Como foi o nosso primeiro encontro.</h2>
@@ -74,8 +155,8 @@
         ===== COMO ADICIONAR UM NOVO EVENTO =====
         Duplique o bloco <article class="event">...</article> inteiro e edite os campos.
         Para um evento FUTURO, use a tag "event__tag--live" com o texto "Próximo evento"
-        e troque o eyebrow/h2 acima para "Agenda" / "Próximos eventos.". Quando o evento
-        passar, troque a tag para "event__tag--done" com o texto "Realizado".
+        e coloque o bloco na seção "Próximos eventos" (id="agenda"). Quando o evento passar,
+        troque a tag para "event__tag--done" com o texto "Realizado" e mova o bloco para esta seção.
       -->
       <article class="event" id="nudcari-conecta" data-reveal>
         <div class="event__date" aria-hidden="true">
@@ -210,7 +291,7 @@
   </section>
 
   <!-- FORMATOS -->
-  <section class="section section--pale">
+  <section class="section section--white">
     <div class="wrap">
       <p class="eyebrow" data-reveal>Formatos</p>
       <h2 class="h2" data-reveal>Como os encontros<br>do núcleo acontecem.</h2>
