@@ -356,6 +356,9 @@ img{ max-width:100%; display:block; }
 }
 .btn-small:hover{ background:var(--blue-deep); transform:translateY(-2px); }
 
+.job-card.is-expired{ display:none !important; }
+.job-card .desc a{ color:var(--blue-deep); text-decoration:underline; text-underline-offset:3px; }
+
 .jobs-note{
   font-size:13px; color:var(--ink-soft); background:var(--pale); border-radius:12px; padding:16px 20px;
   margin-top:36px; font-family:var(--mono); line-height:1.6;

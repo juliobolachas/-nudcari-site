@@ -34,6 +34,19 @@ if (reduceMotion) {
   revealEls.forEach(el => io.observe(el));
 }
 
+/* ===== vagas: esconde sozinho o que já venceu ===== */
+(function hideExpiredJobs() {
+  const cards = document.querySelectorAll('.job-card[data-deadline]');
+  if (!cards.length) return;
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+  cards.forEach(card => {
+    // data-deadline é o último dia de inscrição; só some no dia seguinte
+    if (card.dataset.deadline < today) card.classList.add('is-expired');
+  });
+})();
+
 /* ===== vagas: filter chips ===== */
 (function jobFilters() {
   const chips = document.querySelectorAll('.filter-chip');

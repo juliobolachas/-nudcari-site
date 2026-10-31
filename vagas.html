@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vagas — NUDCARI</title>
-<meta name="description" content="Estágios, editais, bolsas e vagas de emprego selecionadas para estudantes de Relações Internacionais pelo NUDCARI.">
+<meta name="description" content="Estágios, editais, bolsas, vagas de emprego e voluntariado selecionados para estudantes de Relações Internacionais pelo NUDCARI.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
         <g stroke="currentColor" stroke-width="0.8">
           <path d="M100 20 L150 55 L130 110 L70 110 L50 55 Z"/>
           <path d="M100 20 L100 60 M150 55 L100 60 M130 110 L100 60 M70 110 L100 60 M50 55 L100 60"/>
-          <path d="M150 55 L180 40 M130 110 L70 110 L30 125"/>
+          <path d="M150 55 L180 40 M130 110 L175 120 M70 110 L30 125"/>
         </g>
         <g fill="currentColor">
           <circle cx="100" cy="20" r="3"/><circle cx="150" cy="55" r="3"/><circle cx="130" cy="110" r="3"/>
@@ -58,7 +58,7 @@
       <p class="eyebrow eyebrow--light" data-reveal>Vagas</p>
       <h1 data-reveal>Oportunidades para internacionalistas.</h1>
       <p class="lede" data-reveal>
-        Estágios, editais, bolsas e vagas de emprego selecionadas e organizadas
+        Estágios, editais, bolsas, vagas de emprego e voluntariado selecionados e organizados
         pela equipe de Carreira &amp; Oportunidades do NUDCARI.
       </p>
     </div>
@@ -76,290 +76,179 @@
         <button class="filter-chip" data-filter="voluntariado">Voluntariado</button>
       </div>
 
+      <!--
+        ===== COMO ADICIONAR / REMOVER UMA VAGA =====
+        Duplique um bloco <article class="job-card" ...>...</article> inteiro e edite os campos.
+        data-type aceita: estagio | emprego | edital | voluntariado.
+        data-deadline (AAAA-MM-DD) é o ÚLTIMO dia de inscrição: depois dessa data o card
+        some sozinho da página. Se a vaga não tem prazo definido, apague o atributo data-deadline.
+        Mantenha a lista ordenada por prazo (mais urgente primeiro) e atualize a data em "Última atualização".
+      -->
+
       <div class="jobs" id="jobsList">
 
-        <!-- OPORTUNIDADE 1: OPERADOR(A) DE PORTO — ALCOA/ALUMAR -->
-        <article class="job-card" data-type="emprego" data-reveal>
+        <!-- PRAZO: 31/10/2026 -->
+        <article class="job-card" data-type="emprego" data-deadline="2026-10-31" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Emprego</span>
-              <span class="job-card__tag">São Luís / MA</span>
+              <span class="job-card__tag">Trainee</span>
               <span class="job-card__tag">Presencial</span>
             </div>
-            <h3>Operador(a) de Porto — Alcoa/Alumar</h3>
-            <p class="job-card__org">Alcoa / Alumar</p>
-            <p class="desc">Atuação nas operações portuárias da Alumar, envolvendo carregadores e descarregadores de navios, sistemas de transporte de materiais a granel, inspeção de equipamentos e acompanhamento da movimentação de matérias-primas. Exige ensino médio completo, CNH B válida, conhecimentos básicos de informática e Pacote Office, boa comunicação, trabalho em equipe e disponibilidade para turnos.</p>
+            <h3>Programa Trainee CBC</h3>
+            <p class="job-card__org">Companhia Brasileira de Cartuchos (CBC) · Ribeirão Pires/SP ou Montenegro/RS</p>
+            <p class="desc">Programa de 24 meses, 100% presencial, para quem está no último ano da graduação ou é recém-formado em Relações Internacionais, Administração, Comércio Exterior, Economia, Marketing ou Engenharias elegíveis. Exige inglês avançado, perfil analítico e interesse ou experiência na área industrial. Áreas: administrativa, comercial, engenharia e logística nacional e internacional.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Prazo<strong>Não informado</strong></span>
-            <a href="https://www.linkedin.com/jobs/view/4471645939" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+            <span class="job-card__deadline">Inscrições até<strong>31/10/2026</strong></span>
+            <a href="https://vempracbc.gupy.io/jobs/11942276" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 2: TRAINEE ARMAC 2027 -->
-        <article class="job-card" data-type="emprego" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Trainee</span>
-              <span class="job-card__tag">Brasil</span>
-              <span class="job-card__tag">R$ 9.000</span>
-            </div>
-            <h3>Programa de Trainee Armac 2027</h3>
-            <p class="job-card__org">Armac</p>
-            <p class="desc">Programa de 8 meses, com atuação 100% presencial e disponibilidade para mudança de cidade ou estado. Aceita formados entre julho de 2024 e dezembro de 2026 em Engenharias, Administração, Economia, Logística ou áreas relacionadas. Benefícios incluem plano de carreira acelerado e bônus anual.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>30/09/2026</strong></span>
-            <a href="https://trainee.armac.com.br/?utm=AnaCarvalhoCarreira" target="_blank" rel="noopener noreferrer" class="btn-small">Ver programa →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 3: AGENTE DE DESENVOLVIMENTO COMUNITÁRIO JÚNIOR -->
-        <article class="job-card" data-type="emprego" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Emprego</span>
-              <span class="job-card__tag">São Luís / MA</span>
-              <span class="job-card__tag">CLT temporário</span>
-            </div>
-            <h3>Agente de Desenvolvimento Comunitário Júnior</h3>
-            <p class="job-card__org">Plan International Brasil</p>
-            <p class="desc">Vaga presencial em São Luís, com contrato CLT temporário de 6 meses e salário bruto de R$ 2.016,00. A atuação envolve relacionamento com comunidades, apoio a projetos, mobilização de famílias e lideranças, acompanhamento de atividades e visitas e ações relacionadas à proteção infantil e salvaguarda. Exige ensino médio, Word e Excel e capacidade de organização e planejamento.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Candidatura<strong>Disponível</strong></span>
-            <a href="https://www.linkedin.com/jobs/view/4466204310" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 4: TRAINEE LOCALIZA&CO 2027 -->
-        <article class="job-card" data-type="emprego" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Trainee</span>
-              <span class="job-card__tag">Belo Horizonte / MG</span>
-              <span class="job-card__tag">Todos os cursos</span>
-            </div>
-            <h3>Programa de Trainee Localiza&Co 2027</h3>
-            <p class="job-card__org">Localiza&Co</p>
-            <p class="desc">Programa com início previsto para janeiro de 2027, aberto a todos os cursos superiores. Exige formação concluída entre 2024 e 2026, disponibilidade para residir em Belo Horizonte e para viagens. Inglês e espanhol são diferenciais.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições<strong>27/08 a 30/09/2026</strong></span>
-            <a href="https://cloud.e.localiza.com/trainee?utm_source=google_ads_matchbox_trainee&utm_medium=cpc&utm_campaign=google_ads_matchbox_trainee&gad_source=1&gad_campaignid=24239581819&gbraid=0AAAABEmPDL9VuffTle6k8pcAhxOOZrIvy&gclid=Cj0KCQjw2t3VBhD8ARIsAK0F6qwp454tcyiRPXVPMQFbtlk56-GNdjEn4bmI7_BFce_MFriyXkj9NJQaAn8zEALw_wcB" target="_blank" rel="noopener noreferrer" class="btn-small">Ver programa →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 5: MESTRADO UNILA -->
-        <article class="job-card" data-type="edital" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Edital / Pós-Graduação</span>
-              <span class="job-card__tag">Relações Internacionais</span>
-              <span class="job-card__tag">UNILA</span>
-            </div>
-            <h3>Mestrado em Relações Internacionais — UNILA | Ingresso 2027</h3>
-            <p class="job-card__org">Universidade Federal da Integração Latino-Americana (UNILA)</p>
-            <p class="desc">Processo seletivo para a nova turma do Programa de Pós-Graduação em Relações Internacionais, com ingresso em 2027. O processo seletivo é gratuito e é especialmente relevante para estudantes interessados em pesquisa e formação acadêmica em Relações Internacionais.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>04/10/2026</strong></span>
-            <a href="https://portal.unila.edu.br/programas-pos-graduacao/ppgri?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="btn-small">Ver edital →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 6: UNIGOU REMOTE 2027 -->
-        <article class="job-card" data-type="estagio" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Estágio Acadêmico</span>
-              <span class="job-card__tag">100% Remoto</span>
-              <span class="job-card__tag">Internacional</span>
-            </div>
-            <h3>UNIGOU Remote 2027 — Estágio Acadêmico Internacional</h3>
-            <p class="job-card__org">Instituto Tcheco-Brasileiro para Cooperação Acadêmica (INCBAC)</p>
-            <p class="desc">Experiência acadêmica e científica internacional em cooperação com universidades e instituições de pesquisa da República Tcheca. A atividade é 100% online, em inglês, com duração de 2 a 3 meses e orientação para produção e publicação de artigo científico. Aberto a graduandos, mestrandos, doutorandos e recém-formados; graduandos precisam ter pelo menos 2 anos de curso concluídos.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>09/10/2026</strong></span>
-            <a href="https://internacional.ufrj.br/2026/09/unigou-remote-2027-abre-inscricoes-para-estagios-academicos-internacionais/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver chamada →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 7: RECLAIM ENTERTAINMENT -->
-        <article class="job-card" data-type="estagio" data-reveal>
+        <!-- PRAZO: 02/11/2026 -->
+        <article class="job-card" data-type="estagio" data-deadline="2026-11-02" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Estágio</span>
+              <span class="job-card__tag">Qualquer curso</span>
+              <span class="job-card__tag">Inclui Imperatriz/MA</span>
+            </div>
+            <h3>Programa de Estágio Suzano 2027</h3>
+            <p class="job-card__org">Suzano</p>
+            <p class="desc">Para graduandos de qualquer curso com formatura prevista entre junho de 2028 e junho de 2029. Exige disponibilidade para estagiar 30 ou 40 horas semanais; inglês não é obrigatório. Vagas em São Paulo/SP, Suzano/SP, Limeira/SP, Jacareí/SP, Itapetininga/SP, Três Lagoas/MS, Mucuri/BA, Aracruz/ES, Imperatriz/MA e Belém/PA.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>02/11/2026</strong></span>
+            <a href="https://www.suzano.com.br/trabalhe-conosco/estagio" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <!-- PRAZO: 03/11/2026 -->
+        <article class="job-card" data-type="emprego" data-deadline="2026-11-03" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
+              <span class="job-card__tag">Trainee</span>
+              <span class="job-card__tag">Presencial</span>
+            </div>
+            <h3>Programa Trainee Praso 2027</h3>
+            <p class="job-card__org">Praso · Recife/PE ou Fortaleza/CE</p>
+            <p class="desc">Remuneração de R$ 10.000 mensais. Para quem está cursando ou concluiu o ensino superior entre dezembro de 2022 e dezembro de 2027, em qualquer curso, com disponibilidade para residir e trabalhar em Recife ou Fortaleza. Áreas: Planejamento, Pessoas e Gestão, Supply, Vendas, Growth e Marketing e Serviços Financeiros.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>03/11/2026</strong></span>
+            <a href="https://sejatrainee.com.br/startup-praso-vagas-abertas/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <!-- PRAZO: 04/11/2026 -->
+        <article class="job-card" data-type="voluntariado" data-deadline="2026-11-04" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Voluntariado</span>
+              <span class="job-card__tag">100% remoto</span>
+              <span class="job-card__tag">6 semanas</span>
+            </div>
+            <h3>Voluntariado ONU: pesquisa sobre ODS e voluntariado na África</h3>
+            <p class="job-card__org">PNUD · UN Volunteers</p>
+            <p class="desc">Não exige experiência anterior. Atividades: pesquisa e análise de documentos estratégicos da ONU, identificação de oportunidades de voluntariado e recomendações sobre os ODS e o desenvolvimento sustentável em países africanos. Pede habilidades de pesquisa, análise e redação, autonomia e cumprimento de prazos. Português, inglês e espanhol funcionais são desejáveis.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Inscrições até<strong>04/11/2026</strong></span>
+            <a href="https://app.unv.org/opportunities/1784888021273381" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="emprego" data-deadline="2026-11-04" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
               <span class="job-card__tag">Remoto</span>
-              <span class="job-card__tag">Internacional</span>
+              <span class="job-card__tag">Brasil</span>
             </div>
-            <h3>Programa de Estágio — Reclaim Entertainment Ventures</h3>
-            <p class="job-card__org">Reclaim Entertainment Ventures</p>
-            <p class="desc">Estágio remoto e não remunerado voltado ao desenvolvimento de projetos internacionais de conteúdo, com foco em soft power brasileiro. As atividades incluem leitura e análise de projetos, pesquisas, apresentações, decks, pitches, bíblias e tradução de materiais. Exige estar a partir do 3º período de RI, Cinema e Audiovisual ou área correlata e ter inglês fluente.</p>
+            <h3>Assistente Editorial de Português</h3>
+            <p class="job-card__org">Dialogue Earth</p>
+            <p class="desc">Contrato de 12 meses, 40 horas semanais, com remuneração de US$ 1.400/mês. Requer português nativo, inglês avançado, experiência em redação, edição, pesquisa, checagem de informações, redes sociais e produção de conteúdo digital, além de conhecimento sobre questões ambientais e climáticas no Brasil.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Prazo<strong>Não informado</strong></span>
-            <a href="https://lnkd.in/p/dSb6ja6n" target="_blank" rel="noopener noreferrer" class="btn-small">Ver publicação →</a>
+            <span class="job-card__deadline">Inscrições até<strong>04/11/2026</strong></span>
+            <a href="https://dialogue.earth/en/jobs/portuguese-editorial-assistant-brazil/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 8: GLOBAL TRAINEE TERNIUM -->
-        <article class="job-card" data-type="emprego" data-reveal>
+        <!-- PRAZO: 06/11/2026 -->
+        <article class="job-card" data-type="emprego" data-deadline="2026-11-06" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
               <span class="job-card__tag">Trainee</span>
-              <span class="job-card__tag">Rio de Janeiro / RJ</span>
-              <span class="job-card__tag">Híbrido</span>
+              <span class="job-card__tag">Presencial ou híbrido</span>
             </div>
-            <h3>Global Trainee Ternium 2026</h3>
-            <p class="job-card__org">Ternium</p>
-            <p class="desc">Programa de até 24 meses para formação de futuras lideranças, com atuação em projetos reais e trilha estruturada de desenvolvimento. Aceita estudantes no último período ou pessoas com até 2 anos de formadas, incluindo Relações Internacionais entre os cursos elegíveis. Exige disponibilidade para trabalhar no Rio de Janeiro, em modelo híbrido de 4 dias presenciais e 1 dia de home office.</p>
+            <h3>Trainee BNP Paribas 2027</h3>
+            <p class="job-card__org">BNP Paribas · São Paulo/SP</p>
+            <p class="desc">Para formados entre dezembro de 2024 e julho de 2027, com inglês avançado ou fluente. A área elegível para RI é Gestão de Projetos, Qualidade e Eficiência. O programa oferece desenvolvimento profissional, mentoria com lideranças e possibilidade de experiência internacional em Nova York.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Candidatura<strong>Consultar publicação</strong></span>
-            <a href="https://lnkd.in/p/d6KAjiHD" target="_blank" rel="noopener noreferrer" class="btn-small">Ver oportunidade →</a>
+            <span class="job-card__deadline">Inscrições até<strong>06/11/2026</strong></span>
+            <a href="https://sejatrainee.com.br/trainee-bnp-paribas-e-a-oportunidade-de-trabalhar-em-um-banco-global/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 9: TRAINEE SABESP 2027 -->
-        <article class="job-card" data-type="emprego" data-reveal>
+        <!-- PRAZO: 12/11/2026 -->
+        <article class="job-card" data-type="voluntariado" data-deadline="2026-11-12" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
-              <span class="job-card__tag">Trainee</span>
-              <span class="job-card__tag">São Paulo / SP</span>
-              <span class="job-card__tag">R$ 9.000</span>
+              <span class="job-card__tag">Voluntariado</span>
+              <span class="job-card__tag">100% remoto</span>
+              <span class="job-card__tag">4 semanas</span>
             </div>
-            <h3>Programa de Trainee Sabesp 2027</h3>
-            <p class="job-card__org">Sabesp</p>
-            <p class="desc">Programa com 20 vagas e início previsto para janeiro de 2027, em modelo 100% presencial em São Paulo. Aceita graduação concluída entre 2022 e 2026 em bacharelado ou tecnólogo e todas as áreas de formação. Entre as áreas de atuação estão Estratégia e Novos Negócios, Relações Institucionais e Sustentabilidade, Compliance, Finanças, Jurídico, Regulação e Energia.</p>
+            <h3>Campanha do Dia Internacional do Voluntariado 2026</h3>
+            <p class="job-card__org">UN Volunteers · ONU</p>
+            <p class="desc">Não exige experiência; inglês obrigatório. Atividades: apoio à criação de campanhas, conteúdos digitais e materiais de divulgação sobre voluntariado, desenvolvimento sustentável e ODS.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>26/10/2026</strong></span>
-            <a href="https://www.sabesp.com.br/carreiras/programa-trainee" target="_blank" rel="noopener noreferrer" class="btn-small">Ver programa →</a>
+            <span class="job-card__deadline">Inscrições até<strong>12/11/2026</strong></span>
+            <a href="https://app.unv.org/opportunities/1784888021273617" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 10: YENCHING ACADEMY -->
-        <article class="job-card" data-type="edital" data-reveal>
+        <!-- PRAZO: 30/11/2026 -->
+        <article class="job-card" data-type="edital" data-deadline="2026-11-30" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Edital / Bolsa</span>
               <span class="job-card__tag">China</span>
               <span class="job-card__tag">Bolsa Integral</span>
             </div>
-            <h3>Yenching Academy — Mestrado com bolsa na Peking University</h3>
-            <p class="job-card__org">Peking University · Yenching Academy</p>
-            <p class="desc">Mestrado interdisciplinar em China Studies, com duração de 2 anos e aulas em inglês. Uma das áreas de pesquisa é Politics and International Relations. A bolsa inclui, no primeiro ano, mensalidades e taxas acadêmicas, acomodação, auxílio mensal, seguro médico básico, passagem de ida e volta para Pequim e despesas relacionadas à pesquisa e estudos de campo.</p>
+            <h3>Yenching Academy — bolsa de mestrado na Peking University</h3>
+            <p class="job-card__org">Yenching Academy · Peking University (Pequim, China)</p>
+            <p class="desc">Mestrado interdisciplinar em Estudos sobre a China com tudo pago: taxas, acomodação, passagens, seguro e auxílio de custo. Uma das seis áreas é Política e Relações Internacionais. Requer graduação em qualquer área, bom histórico, perfil de liderança e inglês (IELTS 7 / TOEFL 100). Alunos de FGV, UnB e Unicamp devem se candidatar pela própria universidade.</p>
           </div>
           <div class="job-card__meta">
             <span class="job-card__deadline">Inscrições até<strong>30/11/2026</strong></span>
-            <a href="https://apply.yca.pku.edu.cn/login" target="_blank" rel="noopener noreferrer" class="btn-small">Inscrever-se →</a>
+            <a href="https://yenchingacademy.pku.edu.cn/ADMISSIONS.htm" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 11: ONU -->
-        <article class="job-card" data-type="voluntariado" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Voluntariado</span>
-              <span class="job-card__tag">Online / Remoto</span>
-              <span class="job-card__tag">ONU</span>
-            </div>
-            <h3>Voluntariado Online na ONU (UN Volunteers)</h3>
-            <p class="job-card__org">United Nations Volunteers (UNV) · Organização das Nações Unidas</p>
-            <p class="desc">Oportunidades de voluntariado internacional 100% online em diversas agências das Nações Unidas. Há oportunidades em áreas como pesquisa, redação de relatórios, tradução, comunicação estratégica e cooperação internacional.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Vagas<strong>Contínuas</strong></span>
-            <a href="https://www.linkedin.com/posts/call-for-online-un-volunteerspdf-ugcPost-7506608205238579200-MEKW" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 12: CLARENDON SCHOLARSHIPS -->
-        <article class="job-card" data-type="edital" data-reveal>
+        <!-- PRAZO: 01/12/2026 -->
+        <article class="job-card" data-type="edital" data-deadline="2026-12-01" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Edital / Bolsa</span>
-              <span class="job-card__tag">Reino Unido</span>
-              <span class="job-card__tag">Bolsa Integral</span>
+              <span class="job-card__tag">Europa</span>
+              <span class="job-card__tag">Erasmus Mundus</span>
             </div>
-            <h3>Clarendon Scholarships — Pós-Graduação na Universidade de Oxford</h3>
-            <p class="job-card__org">University of Oxford · Reino Unido</p>
-            <p class="desc">Programa de bolsas para cursos de Mestrado ou Doutorado na Universidade de Oxford, com cobertura das taxas acadêmicas e auxílio para custo de vida. O programa contempla áreas relacionadas a Relações Internacionais, entre diversas outras.</p>
+            <h3>Mundus MAPP 2027–2029 — Mestrado em Políticas Públicas</h3>
+            <p class="job-card__org">Erasmus Mundus · Áustria, Espanha, Países Baixos e Reino Unido</p>
+            <p class="desc">Mestrado de 2 anos, com percursos em universidades de quatro países. A bolsa Erasmus Mundus paga € 1.400 mensais por até 24 meses e isenta integralmente as taxas acadêmicas. Pede graduação concluída ou com conclusão prevista até agosto de 2027, inglês comprovado, histórico acadêmico, duas cartas de recomendação, currículo e carta de motivação.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Prazos até<strong>Dez/2026 e Jan/2027</strong></span>
-            <a href="https://partiuintercambio.org/bolsas-de-estudo/clarendon-bolsa-para-pos-graduacao-na-universidade-de-oxford/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver bolsa →</a>
+            <span class="job-card__deadline">Inscrições para bolsas até<strong>01/12/2026</strong></span>
+            <a href="https://www.mundusmapp.org/how-to-apply/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 13: WEIDENFELD-HOFFMANN -->
-        <article class="job-card" data-type="edital" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Edital / Bolsa</span>
-              <span class="job-card__tag">Reino Unido</span>
-              <span class="job-card__tag">Bolsa Integral</span>
-            </div>
-            <h3>Weidenfeld-Hoffmann Scholarships and Leadership Programme</h3>
-            <p class="job-card__org">University of Oxford · Reino Unido</p>
-            <p class="desc">Bolsa integral para mestrados elegíveis em Oxford, incluindo áreas ligadas a Relações Internacionais, políticas públicas, economia, direito e ciências sociais. O programa é aberto a candidatos do Brasil e combina apoio financeiro com formação em liderança.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>Dez/2026 e Jan/2027</strong></span>
-            <a href="https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/weidenfeld-hoffmann-scholarships-and-leadership-programme" target="_blank" rel="noopener noreferrer" class="btn-small">Ver bolsa →</a>
-          </div>
-        </article>
-
-      </div>
-            <h3>Processo Seletivo PPGEO — Mestrado e Doutorado em Geografia</h3>
-            <p class="job-card__org">Programa de Pós-Graduação em Geografia, Natureza e Dinâmica do Espaço · UEMA</p>
-            <p class="desc">Processo seletivo aberto para mestrado e doutorado em um dos programas mais bem avaliados da UEMA (Nota 5 na CAPES). Linhas de pesquisa multidisciplinares com excelente aderência para internacionalistas em áreas como geopolítica, território, meio ambiente e planejamento regional.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições<strong>Abertas</strong></span>
-            <a href="https://www.instagram.com/p/Dde0YwYFm0g/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver edital →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 2: VOLUNTARIADO DA ONU -->
-        <article class="job-card" data-type="voluntariado" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Voluntariado</span>
-              <span class="job-card__tag">Online / Remoto</span>
-              <span class="job-card__tag">ONU</span>
-            </div>
-            <h3>Voluntariado Online na ONU (UN Volunteers)</h3>
-            <p class="job-card__org">United Nations Volunteers (UNV) · Organização das Nações Unidas</p>
-            <p class="desc">Oportunidades de voluntariado internacional 100% online em diversas agências das Nações Unidas. Vagas nas áreas de pesquisa, redação de relatórios, tradução, comunicação estratégica e cooperação internacional. Uma oportunidade prática de engajamento no ecossistema multilateral.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Vagas<strong>Contínuas</strong></span>
-            <a href="https://www.linkedin.com/posts/call-for-online-un-volunteerspdf-ugcPost-7506608205238579200-MEKW" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 3: CLARENDON SCHOLARSHIPS - OXFORD -->
-        <article class="job-card" data-type="edital" data-reveal>
-          <div class="job-card__main">
-            <div class="job-card__tags">
-              <span class="job-card__tag">Edital / Bolsa</span>
-              <span class="job-card__tag">Reino Unido</span>
-              <span class="job-card__tag">Bolsa Integral</span>
-            </div>
-            <h3>Clarendon Scholarships — Pós-Graduação na Universidade de Oxford</h3>
-            <p class="job-card__org">University of Oxford · Reino Unido</p>
-            <p class="desc">Programa de bolsas altamente prestigiado que cobre 100% das taxas acadêmicas e concede um valor para custo de vida em cursos de Mestrado ou Doutorado na Universidade de Oxford. Seleção baseada exclusivamente em mérito acadêmico e potencial para todas as áreas, incluindo Relações Internacionais.</p>
-          </div>
-          <div class="job-card__meta">
-            <span class="job-card__deadline">Prazos até<strong>Dez/2026 e Jan/2027</strong></span>
-            <a href="https://partiuintercambio.org/bolsas-de-estudo/clarendon-bolsa-para-pos-graduacao-na-universidade-de-oxford/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver bolsa →</a>
-          </div>
-        </article>
-
-        <!-- OPORTUNIDADE 4: WEIDENFELD-HOFFMANN SCHOLARSHIPS -->
+        <!-- PRAZO: Dez/2026 ou Jan/2027 -->
         <article class="job-card" data-type="edital" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
@@ -369,55 +258,107 @@
             </div>
             <h3>Weidenfeld-Hoffmann Scholarships and Leadership Programme</h3>
             <p class="job-card__org">Universidade de Oxford</p>
-            <p class="desc">Bolsa integral (100% das taxas + auxílio de custo) para mestrados elegíveis em Oxford, incluindo áreas ligadas a Relações Internacionais, políticas públicas, economia, direito e ciências sociais. Aberta a candidatos do Brasil com foco em liderança e desenvolvimento.</p>
+            <p class="desc">Bolsa integral (100% das taxas + auxílio de custo) para mestrados elegíveis em Oxford, incluindo áreas ligadas a Relações Internacionais, políticas públicas, economia, direito e ciências sociais. Aberta a candidatos de países elegíveis — Brasil incluído — com compromisso de retorno ao país de origem após o curso.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Inscrições até<strong>Dez/2026 e Jan/2027</strong></span>
-            <a href="https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/weidenfeld-hoffmann-scholarships-and-leadership-programme" target="_blank" rel="noopener noreferrer" class="btn-small">Ver bolsa →</a>
+            <span class="job-card__deadline">Inscrições até<strong>Dez/2026 ou Jan/2027</strong></span>
+            <a href="https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/weidenfeld-hoffmann-scholarships-and-leadership-programme" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 5: SELEÇÃO MESTRADO/DOUTORADO PÓS-GRADUAÇÃO -->
+        <!-- PRAZO: varia por programa -->
         <article class="job-card" data-type="edital" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
               <span class="job-card__tag">Edital / Bolsa</span>
-              <span class="job-card__tag">Acadêmico</span>
-              <span class="job-card__tag">Pós-Graduação</span>
+              <span class="job-card__tag">União Europeia</span>
+              <span class="job-card__tag">Bolsa Integral</span>
             </div>
-            <h3>Oportunidades e Editais de Pós-Graduação NUDCARI</h3>
-            <p class="job-card__org">NUDCARI · Seleção de Oportunidades</p>
-            <p class="desc">Divulgação de editais e processos seletivos internos e externos recomendados pelo NUDCARI para continuidade dos estudos acadêmicos e pesquisa em Relações Internacionais e áreas correlatas.</p>
+            <h3>Erasmus Mundus Joint Master (EMJM)</h3>
+            <p class="job-card__org">Comissão Europeia · Consórcios Universitários</p>
+            <p class="desc">Mestrados conjuntos na Europa com bolsa integral, abertos a candidatos de todo o mundo. Destaque para RI: Ação Humanitária (NOHA), Segurança e Estudos Estratégicos (IMSISS), Direito Internacional e Migrações. Requer graduação concluída e proficiência em inglês — requisitos e prazos variam por programa.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Confira no<strong>Instagram</strong></span>
-            <a href="https://www.instagram.com/p/DdcK-hSmyM0/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver no Instagram →</a>
+            <span class="job-card__deadline">Prazo<strong>Varia por programa</strong></span>
+            <a href="https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
-        <!-- OPORTUNIDADE 6: CURA & CAPACITAÇÃO -->
-        <article class="job-card" data-type="edital" data-reveal>
+        <!-- SEM PRAZO INFORMADO -->
+        <article class="job-card" data-type="voluntariado" data-reveal>
           <div class="job-card__main">
             <div class="job-card__tags">
-              <span class="job-card__tag">Capacitação</span>
-              <span class="job-card__tag">Oportunidade</span>
-              <span class="job-card__tag">Rede NUDCARI</span>
+              <span class="job-card__tag">Voluntariado</span>
+              <span class="job-card__tag">Remoto</span>
+              <span class="job-card__tag">Brasil</span>
             </div>
-            <h3>Destaque e Seleção da Semana NUDCARI</h3>
-            <p class="job-card__org">NUDCARI · Carreira & Oportunidades</p>
-            <p class="desc">Acompanhe as oportunidades, programas e mentorias divulgadas diretamente pela rede oficial do Núcleo de Desenvolvimento de Carreira em RI.</p>
+            <h3>Analista Júnior de Comunicação</h3>
+            <p class="job-card__org">PNUMA · Programa das Nações Unidas para o Meio Ambiente</p>
+            <p class="desc">Voluntariado remoto de 7 meses. Requer graduação em RI, Comunicação ou áreas afins, 2 anos de experiência em comunicação e inglês e português fluentes. Conhecimento de ferramentas de comunicação digital é diferencial.</p>
           </div>
           <div class="job-card__meta">
-            <span class="job-card__deadline">Atualização<strong>Semanal</strong></span>
-            <a href="https://www.instagram.com/p/DdM1X4RRat4" target="_blank" rel="noopener noreferrer" class="btn-small">Ver publicação →</a>
+            <span class="job-card__deadline">Prazo<strong>Confira no link</strong></span>
+            <a href="https://unjobs.org/vacancies/1792425686142" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="emprego" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
+              <span class="job-card__tag">Trainee</span>
+              <span class="job-card__tag">Presencial</span>
+            </div>
+            <h3>Programa Trainee Zamp 2027 — Z Talent</h3>
+            <p class="job-card__org">Zamp (Burger King, Popeyes, Starbucks e Subway) · São Paulo/SP</p>
+            <p class="desc">Programa de 12 meses com remuneração de R$ 9.000/mês. Para formados entre dezembro de 2023 e dezembro de 2026, em qualquer área, com disponibilidade para atuar presencialmente em São Paulo e participar de vivências operacionais. Inglês desejável. Áreas: Operações, Supply, Marketing e Vendas, Finanças e Administração, Tecnologia e Dados.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Prazo<strong>Não informado no site oficial</strong></span>
+            <a href="https://zamp.across.jobs/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="estagio" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Estágio</span>
+              <span class="job-card__tag">Remoto</span>
+              <span class="job-card__tag">Estudantes de RI</span>
+            </div>
+            <h3>Assistente de Eventos e Projetos Acadêmicos</h3>
+            <p class="job-card__org">ESRI</p>
+            <p class="desc">Não exige experiência profissional anterior. Atividades: apoio à organização de eventos, podcasts, cursos, grupos de estudos e projetos acadêmicos. Pede boa comunicação, organização, proatividade, interesse por política internacional, diplomacia e educação e facilidade com ferramentas digitais; inglês ou espanhol são diferenciais. Candidatura: envie o currículo para <a href="mailto:pessoas@esri.net.br">pessoas@esri.net.br</a>.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Prazo<strong>Não informado</strong></span>
+            <a href="https://www.instagram.com/p/DfF67_upOsG/" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
+          </div>
+        </article>
+
+        <article class="job-card" data-type="emprego" data-reveal>
+          <div class="job-card__main">
+            <div class="job-card__tags">
+              <span class="job-card__tag">Emprego</span>
+              <span class="job-card__tag">Presencial</span>
+              <span class="job-card__tag">São Luís — MA</span>
+            </div>
+            <h3>Assistente de Agenciamento Marítimo Operacional</h3>
+            <p class="job-card__org">Rochamar Agência Marítima · São Luís/MA</p>
+            <p class="desc">Atuação operacional no setor portuário. Requer inglês intermediário a avançado com ênfase em conversação, Excel intermediário, ensino médio completo e CNH categoria B. Diferencial para quem cursa ou concluiu Comércio Exterior, Logística, RI ou Administração. Vaga também aberta para pessoas com deficiência.</p>
+          </div>
+          <div class="job-card__meta">
+            <span class="job-card__deadline">Prazo<strong>Confira no link</strong></span>
+            <a href="https://rochamar.pandape.infojobs.com.br/Detail/3516064" target="_blank" rel="noopener noreferrer" class="btn-small">Ver vaga →</a>
           </div>
         </article>
 
       </div>
 
       <p class="jobs-note">
-        Última atualização: 27/09/2026. Prazos e requisitos podem mudar sem aviso —
-        confira sempre as informações oficiais no link de cada oportunidade antes de se inscrever.
+        Última atualização: 31/10/2026. As vagas com prazo definido saem da lista automaticamente
+        depois do último dia de inscrição. Prazos e requisitos podem mudar sem aviso — confira
+        sempre as informações oficiais no link de cada oportunidade antes de se inscrever.
       </p>
 
       <div class="mini-cta" data-reveal>
